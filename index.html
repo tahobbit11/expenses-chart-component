@@ -26,28 +26,58 @@
     <div class="content-wrapper">
       <div class="balance">
         <div class="my-balance">
-          <h3>My Balance</h3>
+          <p>My Balance</p>
           <h2>$921.48</h2>
         </div>
-        <div class="design"></div>
+        <div class="design">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
       </div>
       <div class="spending">
         <div class="past-week">
           <h1>Spending - Last 7 Days</h1>
         </div>
         <div class="spending-graph">
-          <div id="monday"></div>
-          <div id="tuesday"></div>
-          <div id="wednesday"></div>
-          <div id="thursday"></div>
-          <div id="friday"></div>
-          <div id="saturday"></div>
-          <div id="sunday"></div>
+          <div class="graph-container">
+            <p class="spending-day" style="visibility: hidden;"></p>
+            <div class="graph"></div>
+            <p class="day"></p>
+          </div>
+          <div class="graph-container">
+            <p class="spending-day" style="visibility: hidden;"></p>
+            <div class="graph"></div>
+            <p class="day"></p>
+          </div>
+          <div class="graph-container">
+            <p class="spending-day" style="visibility: hidden;"></p>
+            <div class="graph" style="background-color: hsl(186, 34%, 60%);"></div>
+            <p class="day"></p>
+          </div>
+          <div class="graph-container">
+            <p class="spending-day" style="visibility: hidden;"></p>
+            <div class="graph"></div>
+            <p class="day"></p>
+          </div>
+          <div class="graph-container">
+            <p class="spending-day" style="visibility: hidden;"></p>
+            <div class="graph"></div>
+            <p class="day"></p>
+          </div>
+          <div class="graph-container">
+            <p class="spending-day" style="visibility: hidden;"></p>
+            <div class="graph"></div>
+            <p class="day"></p>
+          </div>
+          <div class="graph-container">
+            <p class="spending-day" style="visibility: hidden;"></p>
+            <div class="graph"></div>
+            <p class="day"></p>
+          </div>
         </div>
         <div class="spending-break"></div>
         <div class="monthly-spending">
           <div class="money-this-month">
-            <h3>Total This Month</h3>
+            <p>Total This Month</p>
             <h2>$478.33</h2>
           </div>
           <div class="money-last-month">
@@ -57,29 +87,11 @@
       </div>
     </div>
   </main>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script type="module" src="./js/index.js" defer></script>
+  <script src="./js/data.json"></script>
 </body>
 </html>
